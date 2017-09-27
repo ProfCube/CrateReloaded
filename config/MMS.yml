@@ -1,6 +1,6 @@
 #
-# Mystery Mob Spawner
-#   Requires Silk Spawner
+#   Mystery Mob Spawner
+#   ● Requires Silk Spawner
 #
 # Created by ProfCube 
 #
@@ -9,6 +9,7 @@
 # me on discord or make a threat on GitHub about
 # the config so I can help you out.
 #
+#        COPY FROM BELLOW THIS COMMENT         #
 
 MMS:
     type: MYSTERYCRATE
@@ -23,7 +24,7 @@ MMS:
         enchantment: '300:1'
         name: '&6&lMysteryMobSpawner'
         lore:
-            - '&7Right-click in had to reveal one'
+            - '&7Right-click in hand to reveal one'
             - '&7of the following mob spawner types:'
             - ''
             - '&6&lx &7Pig'
