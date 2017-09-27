@@ -45,7 +45,7 @@ MMS:
             - '&6&lx &eBlaze'
             - '&6&lx &eMagmaCube'
             - ''
-            - '&7More can be bought @ &e&nstore.sosapvp.com'
+            - '&7More can be bought @ &e&nstore.NAMEHERE.com'
     effect:
         onOpenEffects: 'witchMagic, CLICK'
         dormantEffects: ''
