@@ -1,0 +1,56 @@
+# -------------------------------------------------------------------------------------------------------------------
+SpawnEgg:
+    type: KEYCRATE # Set this crate to a block, and players may right click the block to use "keys"
+    item: 'NETHER_STAR 1 name:&fEgg Key lore:&6Testing... glow:true'
+    animation: 'none'
+    display-name: '&fSpawn Eggs'
+    holographic:
+        - '{crate-name}'
+        - '{lore:1}'
+    confirmation:
+        enabled: true
+        accept-button: 'STAINED_GLASS_PANE:5 1 name:&aYes lore:&fClick_here_to_open_{crate}!'
+        decline-button: 'STAINED_GLASS_PANE:14 1 name:&4No'
+    preview:
+        enabled: true
+        rows: 2
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: '{p} You have opened a {crate}'
+        broadcast: ''
+    effect:
+        1:
+          class: Star
+          category: PERSISTENT
+          innerRadius: 0.3f
+          spikeHeight: 1.25f
+        2:
+          class: Sound
+          category: OPEN
+          sound: ENTITY_BAT_TAKEOFF
+    reward:
+        minimum-rewards: 1
+        maximum-rewards: 1
+        rewards:
+            - 'unique:(),     chance:(1),          item:(383:4)'
+            - 'unique:(),     chance:(1),          item:(383:6)'
+            - 'unique:(),     chance:(1),          item:(383:23)'
+            - 'unique:(),     chance:(1),          item:(383:27)'
+            - 'unique:(),     chance:(1),          item:(383:34)'
+            - 'unique:(),     chance:(1),          item:(383:35)'
+            - 'unique:(),     chance:(1),          item:(383:36)'
+            - 'unique:(),     chance:(1),          item:(383:37)'
+            - 'unique:(),     chance:(1),          item:(383:50)'
+            - 'unique:(),     chance:(1),          item:(383:56)'
+            - 'unique:(),     chance:(1),          item:(383:67)'
+            - 'unique:(),     chance:(1),          item:(383:68)'
+            - 'unique:(),     chance:(1),          item:(383:69)'
+            - 'unique:(),     chance:(1),          item:(383:100)'
+            - 'unique:(),     chance:(1),          item:(383:101)'
+            - 'unique:(),     chance:(1),          item:(383:102)'
+            - 'unique:(),     chance:(1),          item:(383:103)'
+            - 'unique:(),     chance:(1),          item:(383:105)'
+            - 'unique:(),     chance:(1),          item:(383:120)'
+# -------------------------------------------------------------------------------------------------------------------
