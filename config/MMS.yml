@@ -1,0 +1,61 @@
+############################################
+# +---------------------------------------+#
+# |         Config Revision 17            |#
+# +---------------------------------------+#
+############################################
+
+# -------------------------------------------------------------------------------------------------------------------
+
+# -------------------------------------------- #
+#   Mystery Mob Spawner
+#   ● Crates Reloaded v2.X
+#   ● Requires Silk Spawner
+#
+#             Created by ProfCube
+#
+#  This Config can be used with Free/Paid version
+#  of CrateReloaded. If you have any question PM
+#  me on discord or make a threat on GitHub about
+#        the config so I can help you out.
+# -------------------------------------------- #
+
+
+#        COPY FROM BELLOW THIS COMMENT         #
+
+
+MMS:
+    type: MYSTERYCRATE # Give the player a MobSpawner that they can right click and win one of the prices
+    item: '52 1 name:&6&lMystery_Mob_Spawner lore:&7Right-click_in_hand_to_reveal_one|&7of_the_following_mob_spawner_types:||&6&lx_&7Pig|&6&lx_&7Cow|&6&lx_&7Sheep|&6&lx_&7Chicken|&6&lx_&7Wolf|&6&lx_&7Mooshroom|&6&lx_&7Ocelot|&6&lx_&eIronGolem|&6&lx_&eWitch|&6&lx_&eCreeper|&6&lx_&eSkeleton|&6&lx_&eSpider|&6&lx_&eZombie|&6&lx_&eZombiePigman|&6&lx_&eEndermand|&6&lx_&eBlaze|&6&lx_&eMagmaCube||&7More_can_be_bought_@_&e&nstore.NAMEHERE.com glow:true'
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: '&6&l{p}&e You have oppened a Mystery Spawner Crate!'
+        broadcast: ''
+    effect:
+        1:
+          class: Sound
+          category: OPEN
+          sound: BLOCK_NOTE_BASEDRUM
+    reward:
+        minimum-rewards: 1
+        maximum-rewards: 1
+        rewards:
+            - 'unique:(),     chance:(93),         cmd:(/ss give {player} Pig)'
+            - 'unique:(),     chance:(90),         cmd:(/ss give {player} Cow)'
+            - 'unique:(),     chance:(91),         cmd:(/ss give {player} Sheep)'
+            - 'unique:(),     chance:(92),         cmd:(/ss give {player} Chicken)'
+            - 'unique:(),     chance:(89),         cmd:(/ss give {player} Wolf)'
+            - 'unique:(),     chance:(65),         cmd:(/ss give {player} Mooshroom)'
+            - 'unique:(),     chance:(70),         cmd:(/ss give {player} Ocelot)'
+            - 'unique:(),     chance:(1),          cmd:(/ss give {player} IronGolem)'
+            - 'unique:(),     chance:(10),         cmd:(/ss give {player} Witch)'
+            - 'unique:(),     chance:(2),          cmd:(/ss give {player} Creeper)'
+            - 'unique:(),     chance:(35),         cmd:(/ss give {player} Skeleton)'
+            - 'unique:(),     chance:(40),         cmd:(/ss give {player} Spider)'
+            - 'unique:(),     chance:(50),         cmd:(/ss give {player} Zombie)'
+            - 'unique:(),     chance:(10),         cmd:(/ss give {player} ZombePigman)'
+            - 'unique:(),     chance:(9),          cmd:(/ss give {player} Enderman)'
+            - 'unique:(),     chance:(12),         cmd:(/ss give {player} Blaze)'
+            - 'unique:(),     chance:(20),         cmd:(/ss give {player} MagmaCube)'
+# -------------------------------------------------------------------------------------------------------------------
