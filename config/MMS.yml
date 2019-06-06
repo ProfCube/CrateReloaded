@@ -15,7 +15,6 @@ MMS:
     type: MYSTERYCRATE # Set this crate to a block, and players may right click the block to use "keys"
     item: 'SPAWNER 1 name:&6&lMysteryMobSpawner lore:&7Right-click_in_hand_to_reveal_one|&7of_the_following_mob_spawner_types:||&6&lx_&7Pig|&6&lx_&7Cow|&6&lx_&7Sheep|&6&lx_&7Chicken|&6&lx_&7Wolf|&6&lx_&7Mooshroom|&6&lx_&7Ocelot|&6&lx_&eIronGolem|&6&lx_&eWitch|&6&lx_&eCreeper|&6&lx_&eSkeleton|&6&lx_&eSpider|&6&lx_&eZombie|&6&lx_&eZombiePigman|&6&lx_&eEndermand|&6&lx_&eBlaze|&6&lx_&eMagmaCube||&7More_can_be_bought_@_&e&nstore.NAMEHERE.com glow:true'
     animation: 'Rectangle'
-    display-name: 'Alpha Crate'
     confirmation:
         enabled: false
         accept-button: 'GREEN_STAINED_GLASS_PANE 1 name:&aYes lore:&fClick_here_to_open_{crate}!'
