@@ -12,6 +12,64 @@
 #        COPY FROM BELLOW THIS COMMENT         #
 
 MMS:
+    type: MYSTERYCRATE # Set this crate to a block, and players may right click the block to use "keys"
+    item: 'SPAWNER 1 name:&6&lMysteryMobSpawner lore:&7Right-click_in_hand_to_reveal_one|&7of_the_following_mob_spawner_types:||&6&lx_&7Pig|&6&lx_&7Cow|&6&lx_&7Sheep|&6&lx_&7Chicken|&6&lx_&7Wolf|&6&lx_&7Mooshroom|&6&lx_&7Ocelot|&6&lx_&eIronGolem|&6&lx_&eWitch|&6&lx_&eCreeper|&6&lx_&eSkeleton|&6&lx_&eSpider|&6&lx_&eZombie|&6&lx_&eZombiePigman|&6&lx_&eEndermand|&6&lx_&eBlaze|&6&lx_&eMagmaCube||&7More_can_be_bought_@_&e&nstore.NAMEHERE.com glow:true'
+    animation: 'Rectangle'
+    display-name: 'Alpha Crate'
+    confirmation:
+        enabled: false
+        accept-button: 'GREEN_STAINED_GLASS_PANE 1 name:&aYes lore:&fClick_here_to_open_{crate}!'
+        decline-button: 'RED_STAINED_GLASS_PANE 1 name:&4No'
+    preview:
+        enabled: false
+        rows: 0
+    buy:
+        enabled: false
+        cost: 0
+    message:
+        open: '&7You have opened a &6&lMysteryMobSpawner'
+        broadcast: ''
+    effect:
+        1:
+          class: Original
+          category: PERSISTENT
+        2:
+          class: Sound
+          category: ANIMATION
+          sound: BLOCK_WOOD_PLACE
+        3:
+          class: Sound
+          sound: ENTITY_BAT_TAKEOFF
+          CATEGORY: END
+    reward:
+        minimum-rewards: 1
+        maximum-rewards: 1
+        rewards:
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Pig 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lPig)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Cow 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lCow)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Sheep 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lSheep)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Chicken 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lChicken)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Wolf 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lWolf)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Mooshroom 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lMooshroom)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Ocelot 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lOcelot)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% IronGolem 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lIronGolem)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Witch 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lWitch)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Creeper 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lCreeper)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Skeleton 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lSkeleton)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Spider 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lSpider)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Zombie 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lZombie)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% ZombePigman 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lZombiePigman)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Enderman 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lEnderman)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% Blaze 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lBlaze)'
+            - 'unique:(),     chance:(1),           cmd:(ss give %player% MagmaCube 1),   display:(SPAWNER 1 name:&7Spawner: lore:&e&lMagmaCube)'
+
+
+##########################################################################################################
+# USE THIS VERSION BELLOW IF YOU ARE ON VERSION 1.0 OF CRATES RELOADED THE VERSION ABOVE WONT WORK ON IT #
+##########################################################################################################
+
+
+MMS:
     type: MYSTERYCRATE
     buy:
         enabled: false
